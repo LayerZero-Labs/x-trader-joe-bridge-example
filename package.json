@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@layerzerolabs/x-trader-joe-bridge": "^0.0.1-canary.3",
+    "@layerzerolabs/x-trader-joe-bridge": "^0.0.1-canary.6",
     "@rainbow-me/rainbowkit": "^0.8.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
