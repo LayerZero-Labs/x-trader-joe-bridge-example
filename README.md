@@ -1,10 +1,38 @@
-# Getting Started with Create React App
+# Trader Joe Bridge Example
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an example implementation of the Trader Joe Bridge using the @layerzerolabs/x-trader-joe-bridge package.
 
-## Available Scripts
+## Required Configuration
 
-In the project directory, you can run:
+Your app must call the `bootstrap` function from @layerzerolabs/x-trader-joe-bridge with token and wallet configurations.
+
+### Token Config
+
+The token configuration dictates which tokens will be available for transfer. See [mainnet](https://github.com/LayerZero-Labs/x-trader-joe-bridge-example/blob/master/src/config/mainnet.ts) for an example config. Use `Token` from @layerzerolabs/x-trader-joe-bridge with chain id, token address, decimals, and token symbol. Also include proxy contracts with chain id, and contract address.
+
+### Wallet Config
+
+The app is set up to use rainbowkit as the wallet connector, see their [docs](https://www.rainbowkit.com/docs/introduction) for visual customization. The example app is using the default wallets list, see docs also to customize. Which networks using which rpc providers is also configurable using the [wagmi chain configuration](https://github.com/LayerZero-Labs/x-trader-joe-bridge-example/blob/master/src/config/wagmi.ts#L9).
+
+## Rendering the Bridge
+
+To render the `Bridge`, create a wallet adapter using the `createWagmiProvider` utility function and wrap `Bridge` with it and the `ThemeProvider` with the desired theme. If using a theme switcher this prop will need to be dynamic.
+
+```
+    <EthereumAdapterProvider>
+        <ThemeProvider theme={themeDark}>
+            <Bridge />
+        </ThemeProvider>
+    </EthereumAdapterProvider>
+```
+
+## External Styles
+
+Import styles from `rainbowkit` and `react-tostify` and include and import any custom fonts.
+
+## Running the Example App (built with Create React App)
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). In the project directory, you can run:
 
 ### `yarn start`
 
@@ -13,34 +41,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
