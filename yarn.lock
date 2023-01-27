@@ -1260,7 +1260,7 @@
   resolved "https://registry.yarnpkg.com/@emotion/memoize/-/memoize-0.8.0.tgz#f580f9beb67176fa57aae70b08ed510e1b18980f"
   integrity sha512-G/YwXTkv7Den9mXDO7AhLWkE3q+I92B+VqAE+dYG4NGPaHZGvt3G8Q0p9vmE+sq7rTGphUbAvmQ9YpbfMQGGlA==
 
-"@emotion/react@^11.9.3":
+"@emotion/react@^11.10.5":
   version "11.10.5"
   resolved "https://registry.yarnpkg.com/@emotion/react/-/react-11.10.5.tgz#95fff612a5de1efa9c0d535384d3cfa115fe175d"
   integrity sha512-TZs6235tCJ/7iF6/rvTaOH4oxQg2gMAcdHemjwLKIjKz4rRuYe1HJ2TQJKnAcRAfOUDdU8XoDadCe1rl72iv8A==
@@ -2035,18 +2035,18 @@
   resolved "https://registry.yarnpkg.com/@layerzerolabs/lz-sdk/-/lz-sdk-0.0.10.tgz#e55c3c2889f79446829f1232002364ad29b8b2d9"
   integrity sha512-5me1VGRX+BV1sJkToTsKdndatUPbIl6qIsHJS39ytkRCdWHdU+8xv9fSfEdtunKDijnMWYy9OQnefQOdv6joJQ==
 
-"@layerzerolabs/x-trader-joe-bridge@^0.0.1-canary.3":
-  version "0.0.1-canary.3"
-  resolved "https://registry.yarnpkg.com/@layerzerolabs/x-trader-joe-bridge/-/x-trader-joe-bridge-0.0.1-canary.3.tgz#708a5cdbf9645e457c35eda01dd72ce8fff1fb22"
-  integrity sha512-m7PLC2WjJj5wb/ZFcTG2UnSMaVOXI09OGAJKxCOSroaRgfDg6x80YvXGdvg4dltUew5+7Lbl9jjIBup/zJHS7Q==
+"@layerzerolabs/x-trader-joe-bridge@^0.0.1-canary.7":
+  version "0.0.1-canary.7"
+  resolved "https://registry.yarnpkg.com/@layerzerolabs/x-trader-joe-bridge/-/x-trader-joe-bridge-0.0.1-canary.7.tgz#3ed03f4431396391798803aceb0ba707870e0295"
+  integrity sha512-ut6YmGnqP9beZ+/Oyvksi9VdXZ4LYiG+6w8p7Xe5vWhLu4XZF6pAdqwxcAqtnv6aQxojN8FGKQcSg821pMANGg==
   dependencies:
-    "@emotion/react" "^11.9.3"
+    "@emotion/react" "^11.10.5"
     "@emotion/styled" "^11.9.3"
     "@ethersproject/abstract-provider" "^5.7.0"
     "@ethersproject/providers" "^5.7.2"
     "@headlessui/react" "^1.6.5"
     "@layerzerolabs/lz-sdk" "~0.0.10"
-    "@mui/system" "^5.8.6"
+    "@mui/system" "^5.11.5"
     "@radix-ui/react-dialog" "^1.0.2"
     axios "^0.27.2"
     big.js "^5.2.2"
@@ -2095,7 +2095,7 @@
     csstype "^3.1.1"
     prop-types "^15.8.1"
 
-"@mui/system@^5.8.6":
+"@mui/system@^5.11.5":
   version "5.11.5"
   resolved "https://registry.yarnpkg.com/@mui/system/-/system-5.11.5.tgz#c880199634708c866063396f88d3fdd4c1dfcb48"
   integrity sha512-KNVsJ0sgRRp2XBqhh4wPS5aacteqjwxgiYTVwVnll2fgkgunZKo3DsDiGMrFlCg25ZHA3Ax58txWGE9w58zp0w==

@@ -32,7 +32,7 @@ const App = () => {
   return (
     <Layout>
       <EthereumAdapterProvider>
-        <ThemeProvider theme={themeDark}>
+        <ThemeProvider theme={themeLight}>
           <Bridge />
         </ThemeProvider>
       </EthereumAdapterProvider>
